@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Websocket connection",
+  "author": "André",
+  "version": "1.0",
+  "description": "Cria uma conexão com Websocket toda vez que uma página é carregada.",
+  "permissions": ["tabs"],
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+      }
+  ]
+}
